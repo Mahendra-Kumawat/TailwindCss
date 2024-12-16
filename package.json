@@ -1,0 +1,19 @@
+{
+  "name": "todesktopclone",
+  "version": "1.0.0",
+  "description": "step to run this project ```bash git clone https://github.com/Mahendra-Kumawat/Tailwind_css.git cd Tailwind_css npm install vite npm run watch npm run dev",
+  "main": "script.js",
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.16",
+    "vite": "^6.0.2"
+  },
+  "scripts": {
+    "dev": "vite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
