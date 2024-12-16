@@ -53,7 +53,7 @@ const setupintersectinObserver = (element, leftTORight, speed) => {
   const scrollHandler = () => {
     const translateX =
       (window.innerHeight - element.getBoundingClientRect().top) * speed;
-    console.log(translateX);
+
     let totalTranslate = 0;
     if(leftTORight){
       totalTranslate = inititaltranslateLeftToRight + translateX
@@ -95,24 +95,45 @@ faqsItem.forEach((item) => {
 
 
 
+// function toggleFaq(element) {
+//   const faqContent = element.nextElementSibling; // Get the <p> tag
+//   const icon = element.querySelector('i'); // Get the icon
+  
+//   // Toggle max-height and opacity
+//   if (faqContent.classList.contains('max-h-0')) {
+//     faqContent.classList.remove('max-h-0');
+//     faqContent.classList.add('mt-2');
+//     faqContent.classList.add('max-h-[200px]'); // Set max-height to enough space
+//     icon.classList.add('rotate-180'); // Rotate icon
+//   } else {
+//     faqContent.classList.add('max-h-0');
+//     faqContent.classList.remove('max-h-[200px]');
+//     icon.classList.remove('rotate-180'); // Reset icon rotation
+//     faqContent.classList.remove('mt-2')
+//   }
+// }
 
-// this is the custom scroll event
-const awesomeNavbar = document.querySelector("#awesome-navbar");
 
-document.addEventListener("scroll", () => {
-  console.log("inside the scroll event")
-  const scrollY = window.scrollY;
-  console.log(scrollY)
-  if (scrollY > 400) {
-    awesomeNavbar.classList.remove("hidden");
-    awesomeNavbar.classList.add("flex");
-    console.log("scrooled 400")
-    defaultHeader.classList.add("hidden");
-  }
-  else {
-    awesomeNavbar.classList.remove("flex");
-    awesomeNavbar.classList.add("hidden");
-    console.log("not scrooled 400")
-    defaultHeader.classList.remove("hidden");
-  }
-});
+
+
+
+// // this is the custom scroll event
+// const awesomeNavbar = document.querySelector("#awesome-navbar");
+
+// document.addEventListener("scroll", () => {
+ 
+//   const scrollY = window.scrollY;
+ 
+//   if (scrollY > 400) {
+//     awesomeNavbar.classList.remove("hidden");
+//     awesomeNavbar.classList.add("flex");
+//     console.log("scrooled 400")
+//     defaultHeader.classList.add("hidden");
+//   }
+//   else {
+//     awesomeNavbar.classList.remove("flex");
+//     awesomeNavbar.classList.add("hidden");
+//     console.log("not scrooled 400")
+//     defaultHeader.classList.remove("hidden");
+//   }
+// });
